@@ -32,4 +32,4 @@ catkin_make
 
 # kullanım
 
-- Sol üst köşede yer alan pil simgesi /bat_msg  isimli topikten batarya bilgisini alır. (icon üzerine yaklaşınca batarya durumunu görebilirsiniz.) 
+- Sol üst köşede yer alan pil simgesi ``` /bat_msg ``` isimli topikten batarya bilgisini alır. (icon üzerine yaklaşınca batarya durumunu görebilirsiniz.) 
