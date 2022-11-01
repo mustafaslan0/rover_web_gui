@@ -28,3 +28,9 @@ catkin_make
    
    :bulb: **Tip:** sudo apt install ros-noetic-web-video-server
 - 44-49 satırda olan (/* */ ) işaretleri silerek yorum satınını kaldırınız.
+
+
+# kullanım
+
+- Sol üst köşede yer alan pil simgesi <font color="red">/bat_msg</font> isimli topikten batarya bilgisini alır. (icon üzerine yaklaşınca batarya durumunu görebilirsiniz.)
+
