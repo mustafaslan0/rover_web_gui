@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="index.js"></script>
+    <script type="text/javascript" src="roslib.js"></script>
+    <script type="text/javascript" src="control.js"></script>
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript" src="nipple.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bat.css">
+
+
+    <title>Redgiant</title>
+</head>
+<body>
+  <div class="alert" id="alert">
+    <span class="closebtn" onclick="closeAlert()">&times;</span> 
+    <strong>Hata!</strong> gamepad bağli değil. (bağlıysa bir tuşa basınız)
+  </div>
+  <div class="alertcon" id="alertcon">
+    <span class="closebtncon" onclick="closeAlertcon()">&times;</span> 
+    <strong>Hata!</strong> Rover ile bağlantı başarısız!!!
+  </div>
+
+
+<div id="durum_icons">
+  <span class="statusid"><img
+    id="status" src="error.png" alt=""></span>
+    <span class="gamepad"><img
+      id="gamepadStatus" title="no connection" src="gamepad.png" alt=""></span>
+      
+
+    
+    <div class="battery" id="batteryt" title="???"  >
+      <div class="battery-level" id="bat" style="height: 0%;"></div>
+    </div>
+    <div>
+   
+  
+ 
+
+
+
+
+    <div class="row">
+        <div class="column">
+          <div class="column">
+            <img src="LOGOTASARIMI.png">
+          </div>
+          <img class="cam1s" src="1.png" alt="camera1" id="cam1" onclick="myFunction(this);">
+        </div>
+        <div class="column">
+          <img src="2.png" alt="camera2" id="cam2" onclick="myFunction(this);">
+        </div>
+        <div class="column">
+          <img src="3.png" alt="camera3" id="cam3" onclick="myFunction(this);">
+        </div>
+        <div class="column">
+          <img src="4.png" alt="camera4" id="cam4" onclick="myFunction(this);">
+        </div>
+
+        </div>
+      </div>
+</body>
+</html>
