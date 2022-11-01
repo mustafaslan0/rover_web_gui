@@ -1,5 +1,5 @@
 # rover_web_gui
-##KURULUM
+## KURULUM
 
 mkdir -p catkin_ws/src
 
@@ -15,4 +15,4 @@ catkin_make
 
 
 
-#Ayarlamalar
+# Ayarlamalar
