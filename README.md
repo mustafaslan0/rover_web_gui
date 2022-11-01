@@ -26,6 +26,6 @@ catkin_make
 ------ kameraların çalışmasın için web_video_server başlatmak gerekir.
     ### web_video_server kurulum
     
-    """ sudo apt install ros-noetic-web-video-server  """
+    *** sudo apt install ros-noetic-web-video-server  ***
 
   
