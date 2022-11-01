@@ -27,5 +27,4 @@ catkin_make
    :warning: **Warning:** kameraların çalışmasın için web_video_server başlatmak gerekir.
    
    :bulb: **Tip:** sudo apt install ros-noetic-web-video-server
-
-  
+- 44-49 satırda olan (/* */ ) işaretleri silerek yorum satınını kaldırınız.
