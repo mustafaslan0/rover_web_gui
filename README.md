@@ -26,11 +26,10 @@ catkin_make
 - 
    :warning: **Warning:** kameraların çalışmasın için web_video_server başlatmak gerekir.
    
-   :bulb: **Tip:** sudo apt install ros-noetic-web-video-server
+   :bulb: **Tip:**  ``` sudo apt install ros-noetic-web-video-server ```
 - 44-49 satırda olan (/* */ ) işaretleri silerek yorum satınını kaldırınız.
 
 
 # kullanım
 
-- Sol üst köşede yer alan pil simgesi <font color="red"> /bat_msg </font> isimli topikten batarya bilgisini alır. (icon üzerine yaklaşınca batarya durumunu görebilirsiniz.)  <font color="red">This text is red!</font>
-
+- Sol üst köşede yer alan pil simgesi /bat_msg  isimli topikten batarya bilgisini alır. (icon üzerine yaklaşınca batarya durumunu görebilirsiniz.) 
