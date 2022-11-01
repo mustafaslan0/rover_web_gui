@@ -40,4 +40,4 @@ catkin_make
 
 - Sağ alt köşede bulunan iki icon ise araç ve joystick bağlantılarının durumunu göstermektedir. Ayrıca herhangi bir bağlantı kesilmesinde bildirim gelmektedir.
 
--
+- Sol taraftaki kamera görüntülerine tıklayarak kameraları tam ekran olarak görüntülenebilmektedir.
