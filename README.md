@@ -25,6 +25,7 @@ catkin_make
 - control.js içerisindeki cam1_node="???????" kendi kameralarınızın nodelarını giriniz
 - 
    :warning: **Warning:** kameraların çalışmasın için web_video_server başlatmak gerekir.
+   
    :bulb: **Tip:** sudo apt install ros-noetic-web-video-server
 
   
