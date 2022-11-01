@@ -24,8 +24,8 @@ catkin_make
 
 - contro.js içerisindeki cam1_node="???????" kendi kameralarınızın nodelarını giriniz
 ------ kameraların çalışmasın için web_video_server başlatmak gerekir.
-    ### web_video_server kurulum
-    
+ 
+ 	<sup>  kameraların çalışmasın için web_video_server başlatmak gerekir.</sup>   
     
    :bulb: **Tip:** sudo apt install ros-noetic-web-video-server
 
