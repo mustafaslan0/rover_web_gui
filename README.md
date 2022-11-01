@@ -17,16 +17,14 @@ catkin_make
 
 # Ayarlamalar
 
-- rover_control_website içerisindeki control.js dosyasının içerisinden ip="localhost" degerini aracın ip adresini (ifconfig) yazızını.
+- rover_control_website içerisindeki control.js dosyasının içerisinden ip="localhost" degerini aracın ip adresini (ifconfig) yazızınız.
 
 
--> ### kamera ayarlama
+### kamera ayarlama
 
-- contro.js içerisindeki cam1_node="???????" kendi kameralarınızın nodelarını giriniz
------- kameraların çalışmasın için web_video_server başlatmak gerekir.
- 
- 	<sup>  kameraların çalışmasın için web_video_server başlatmak gerekir.</sup>   
-    
+- control.js içerisindeki cam1_node="???????" kendi kameralarınızın nodelarını giriniz
+- 
+   :warning: **Warning:** kameraların çalışmasın için web_video_server başlatmak gerekir.
    :bulb: **Tip:** sudo apt install ros-noetic-web-video-server
 
   
