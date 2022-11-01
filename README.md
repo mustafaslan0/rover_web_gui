@@ -17,4 +17,4 @@ catkin_make
 
 # Ayarlamalar
 
-- rover_control_website içerisindeki control.js dosyasının içerisinden ip="localhost" degerini aracın ip adresini ('''ifconfig''') yazızını.
+- rover_control_website içerisindeki control.js dosyasının içerisinden ip="localhost" degerini aracın ip adresini (''' ifconfig ''') yazızını.
