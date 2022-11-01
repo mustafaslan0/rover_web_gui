@@ -32,5 +32,5 @@ catkin_make
 
 # kullanım
 
-- Sol üst köşede yer alan pil simgesi <font color="red"> /bat_msg </font> isimli topikten batarya bilgisini alır. (icon üzerine yaklaşınca batarya durumunu görebilirsiniz.)
+- Sol üst köşede yer alan pil simgesi <font color="red"> /bat_msg </font> isimli topikten batarya bilgisini alır. (icon üzerine yaklaşınca batarya durumunu görebilirsiniz.)  <font color="red">This text is red!</font>
 
