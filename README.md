@@ -27,6 +27,6 @@ catkin_make
     ### web_video_server kurulum
     
     
-    *** sudo apt install ros-noetic-web-video-server
+   :bulb: **Tip:** sudo apt install ros-noetic-web-video-server
 
   
