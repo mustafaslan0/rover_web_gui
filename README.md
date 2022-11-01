@@ -36,6 +36,8 @@ catkin_make
 
 # kullanım
 
+- Araç kontrolü için ```/cmd_vel``` ile data göndermektedir.
+
 - Sol üst köşede yer alan pil simgesi ``` /bat_msg ``` isimli topikten batarya bilgisini alır. (icon üzerine yaklaşınca batarya durumunu görebilirsiniz.)
 
 - Sağ alt köşede bulunan iki icon ise araç ve joystick bağlantılarının durumunu göstermektedir. Ayrıca herhangi bir bağlantı kesilmesinde bildirim gelmektedir.
