@@ -23,7 +23,7 @@
 
 var hasGP = false;
 var repGP;
-var ip ='localhost'
+var ip ='192.168.1.103'
 var cam1_node ="/camera/image_raw"
 var cam2_node ="/zed2/left_raw/image_raw_color"
 var cam3_node ="/image_view/output"
@@ -76,9 +76,20 @@ ros.on('connection', function() {
   txt_listener.subscribe(function(m){
     document.getElementById("bat").style.height = m.data;
     document.getElementById("batteryt").title = m.data;
-  
+  })
 
+
+
+  comm_listener = new ROSLIB.Topic({
+    ros : ros,
+    name : "/command_gui",
+    messageType : 'std_msgs/String'
   });
+  send =function (command) {
+    var send_com = new ROSLIB.Message({data: command} );
+    comm_listener.publish(send_com);
+  }
+
 
   cmd_vel_listener = new ROSLIB.Topic({
     ros : ros,
@@ -108,8 +119,8 @@ ros.on('connection', function() {
         threshold: 0.1,
         position: { left: 50 + '%' },
         mode: 'static',
-        size: 150,
-        color: '#000000',
+        size: 50,
+        color: '#f00000',
       };
       manager = nipplejs.create(options);
 
@@ -143,6 +154,23 @@ ros.on('connection', function() {
     window.onload = function () {
       createJoystick();
     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     // game pad ile bağlantı
 
@@ -222,7 +250,6 @@ ros.on('connection', function() {
 function closeAlert() {
     document.getElementById("alert").style.display = "none";
   }
-  function closeAlertcon(mode) {
+function closeAlertcon(mode) {
     document.getElementById("alertcon").style.display = mode;
   }
-

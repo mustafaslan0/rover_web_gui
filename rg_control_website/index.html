@@ -11,11 +11,58 @@
     <script type="text/javascript" src="nipple.js"></script>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="bat.css">
+    <link rel="stylesheet" href="mini1.css">
 
 
     <title>Redgiant</title>
 </head>
 <body>
+
+
+  <nav class="mini mini-nav">
+    <input class="mini-chk" id="mini-menu" type="checkbox" />
+    <label class="mini mini-bars" for="mini-menu">
+      <span class="mini-span"></span>
+      <span class="mini-span"></span>
+      <span class="mini-span"></span>
+    </label>
+  
+    <section class="mini mini-menu">
+      <ul class="mini mini-ul">
+        <li class="mini-li">
+          <a class="mini-a" href="#">
+            <p class="mini-p" onclick="send('autonomy')">Autonomy</p>
+          </a>
+        </li>
+        <li class="mini-li">
+          <a class="mini-a" href="#">
+            <p class="mini-p" onclick="send('artag')">AR Tag </p>
+          </a>
+        </li>
+        
+        
+        <div class="slidecontainer">
+          <a style="color:black; padding: 15px 25px; padding-bottom: 25px; margin: 2px;">Speed</a>
+          <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+        </div>
+        
+        
+
+      <button class="button_box" style="width: 130px; padding-left: 5px;margin: 1px;"onclick="send('open')">OPEN</button>
+      <button class="button_box"  style="width: 130px; padding-left: 5px;margin: 1px;"onclick="send('close')">CLOSE</button>
+      <button class="button_box"  style="width: 265px; padding-left: 5px;margin: 3px;"onclick="send('s_close)">SEMI-CLOSE</button>
+      <div id="zone_joystick" style="margin: 30px;" ></div>
+      
+      </ul>
+      <!-- <div id="zone_joystick2" style="left: 25px;"></div> -->
+    </section>
+  </nav>
+  
+
+
+
+
+
   <div class="alert" id="alert">
     <span class="closebtn" onclick="closeAlert()">&times;</span> 
     <strong>Hata!</strong> gamepad bağli değil. (bağlıysa bir tuşa basınız)
@@ -49,6 +96,8 @@
         <div class="column">
           <div class="column">
             <img src="LOGOTASARIMI.png">
+            
+            
           </div>
           <img class="cam1s" src="1.png" alt="camera1" id="cam1" onclick="myFunction(this);">
         </div>
