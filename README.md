@@ -34,6 +34,11 @@ catkin_make
 - 44-49 satırda olan (/* */ ) işaretleri silerek yorum satınını kaldırınız.
 
 
+
+
+
+
+
 # kullanım
 
 - Araç kontrolü için ```/cmd_vel``` ile data göndermektedir.
@@ -43,3 +48,19 @@ catkin_make
 - Sağ alt köşede bulunan iki icon ise araç ve joystick bağlantılarının durumunu göstermektedir. Ayrıca herhangi bir bağlantı kesilmesinde bildirim gelmektedir.
 
 - Sol taraftaki kamera görüntülerine tıklayarak kameraları tam ekran olarak görüntülenebilmektedir.
+
+
+#v2 updates
+
+
+
+
+![Screenshot_20221103_021826](https://user-images.githubusercontent.com/89737685/199620384-82b953a1-c633-4070-a7db-a3eb68e9fd63.png)
+
+
+
+
+
+
+
+
