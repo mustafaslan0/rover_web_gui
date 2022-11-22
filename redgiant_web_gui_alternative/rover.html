@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="index.js"></script>
+    <script type="text/javascript" src="roslib.js"></script>
+    <script type="text/javascript" src="control.js"></script>
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript" src="nipple.js"></script>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/bat.css">
+    <link rel="stylesheet" href="css/mini1.css">
+    <title>Redgiant</title>
+    <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon">
+    
+</head>
+<body>
+    <button type="button" class="burger" onclick="toggleSidebar()"></button>
+    <img class="logo" src="assets/logo.png" />
+    <aside class="sidebar">
+      <header class="sidebar-header"></header>
+      <nav>
+        <button type="button">
+          <img id="status" src="./assets/rover.svg" />
+          <span>connection</span>
+        </button>
+        <button type="button">
+          <img id="gamepadStatus" src="gamepad.png" />
+          <span id="gamepadStatust">GamePad connection</span>
+        </button>
+      </nav>
+      
+      <nav>
+        <button type="button">
+          <div class="battery" id="batteryt" title="???"  >
+            <div class="battery-level" id="bat" style="height: 50%;"></div>
+          </div>
+          <span class="batteryts">Batarya</span>
+        </button>
+      </nav>
+      <nav>
+        <button type="button" onclick="send('close')">
+            <img src="./assets/close.svg">
+            <span>Arm Close</span>
+        </button>
+        <button type="button" onclick="send('open')">
+            <img src="./assets/open_g.svg">
+            <SPan>Arm Open</SPan>
+        </button>
+        <button type="button" id="auto" onclick="send('autonomy')">
+            <img src="./assets/autonomy.svg" >
+            <span>Autonomy Mode</span>
+        </button>
+      </nav>
+    </aside> 
+
+    <div class="row" align="right" >
+        <div class="column">
+          <img class="cam1s" src="1.png" alt="camera1" id="cam1" onclick="myFunction(this);">
+        </div>
+        <div class="column">
+          <img src="2.png" alt="camera2" id="cam2" onclick="myFunction(this);">
+        </div>
+        <div class="column">
+          <img src="3.png" alt="camera3" id="cam3" onclick="myFunction(this);">
+        </div>
+        <div class="column">
+          <img src="4.png" alt="camera4" id="cam4" onclick="myFunction(this);">
+        </div>
+        </div>
+      </div>
+
+</body>
+</html>

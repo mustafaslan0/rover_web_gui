@@ -1,0 +1,215 @@
+/* minimal menu skeleton following BEM guidelines */
+
+
+
+/*.mini default class */
+/* sets fonts and zeroes margin and padding */
+.mini {
+	position: absolute;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+	border-radius: 4px;
+}
+
+
+/*sets location, z-index, and size of initial button */
+.mini-nav {
+	position: fixed;
+	right: 55px;
+	bottom: 405px;
+	z-index: 100;
+}
+
+
+/* revmoves checkbox */
+.mini-chk {
+	display: none;
+}
+
+
+/* container object for bars (spans) */
+/* sets z-index to:.mini-nav[z-index] + this[z-index] */
+.mini-bars {
+	width: 35px;
+	height: 25px;
+	border: 5px solid #cdcdcd00;
+	background-color: #cdcdcd00;
+	
+	z-index: 1;
+	cursor: pointer;
+}
+
+.mini-chk:checked + .mini-bars {
+	box-shadow: none;
+	transition: box-shadow 0.1s ease-out 0.1s;
+}
+
+
+/* spans are the bars that turn from a hamburger to an x */
+.mini-span {
+	position: absolute;
+	left:0px;
+	width: 35px;
+	height: 4px;
+	background-color: #530505;
+	transform: rotate(0deg);
+	transform-origin: left center;
+
+	transition: opacity 0.3s ease-out 0s,
+		transform 0.2s ease-out 0s,
+		width 0.2s ease-out 0s,
+		left 0.2s ease-out 0s;
+}
+
+.mini-span:nth-child(1) {
+	top: 0px;
+}
+
+.mini-chk:checked + .mini-bars > .mini-span:nth-child(1) {
+	transform: rotate(45deg);
+	width: 30px;
+	left: 7px;
+}
+
+.mini-span:nth-child(2) {
+	top: 10px;
+}
+
+.mini-chk:checked + .mini-bars > .mini-span:nth-child(2) {
+	opacity: 0;
+	width: 30px;
+}
+
+.mini-span:nth-child(3) {
+	top: 20px;
+}
+
+.mini-chk:checked + .mini-bars > .mini-span:nth-child(3) {
+	transform: rotate(-45deg);
+	width: 30px;
+	left: 7px;
+}
+
+
+/* actual menu, sets location and an intial size */
+/* size is transformed between 0 and 1 */
+.mini-menu {
+	right: -45px;
+	bottom: -35px;
+	width: 300px;
+	height: 300px;
+	opacity: 0;
+	background-color: #ffffff;
+	box-shadow: 0px 1px 2px 0px #666666;
+	transform: scale(0, 0);
+	transform-origin: right bottom;
+
+	transition: opacity 0.2s ease-in 0s,
+		transform 0.2s ease-in 0.1s;
+}
+
+.mini-chk:checked ~ .mini-menu {
+	transform: scale(1, 1);
+	opacity: 1;
+
+	transition: opacity 0.2s ease-out 0.1s,
+		transform 0.2s ease-out 0s;
+}
+
+
+/* unordered list, container */
+/* sets margins, width, max-height, vertical-overflow */
+.mini-ul {
+	position: relative;
+	width: 90%;
+	max-height: 235px;
+	margin: 10px auto 38px auto;
+	overflow-y: auto;
+	list-style: none;
+	
+	background-color: #efefef00;
+	overflow: hidden;
+}
+.mini-ul.mini{
+	height: 250px;
+}
+
+
+/* list parts, sets margins and width */
+.mini-li {
+	margin: 10px auto 10px auto;
+	width: 90%;
+	background-color: #4d0808;
+
+	transition: background-color 0.2s ease-out 0s;
+}
+
+.mini-li:hover {
+	background-color: #ff1919;
+}
+
+
+/* undecorate anchors */
+.mini-a {
+	text-decoration: none;
+}
+
+
+/* list text, sets margin, padding, width, centers text */
+.mini-p {
+	width: 90%;
+	margin: 0px auto 0px auto;
+	padding: 0px 0px 1px 0px;
+	font-weight: lighter;
+	font-size: 15px;
+	text-align: center;
+}
+
+
+/* main content area */
+.mini-main {
+	position: absolute;
+	top: 0px;
+	width: 100%;
+	margin: 0px;
+	padding: 0px;
+	background: linear-gradient(140deg, #6d00ff, #009fab);
+}
+
+
+/* adjusted content area */
+.mini-content {
+	width: 90%;
+	max-width: 400px;
+	margin: 30px auto 40px auto;
+}
+
+@media (min-width: 600px) {
+	.mini-content {
+		width: 80%;
+		max-width: 450px;
+		margin: 50px auto 70px auto;
+	}
+}
+
+
+
+h3, b, p, a {
+	color: #ffffff;
+}
+
+.mini-content > a, .mini-content > blockquote > a {
+	font-size: 0.95rem;
+}
+
+.button_box {
+	background-color: rgba(255, 255, 255, 0); 
+	color: black; 
+	border: 2px solid #7c0a0a;
+  }
+  
+  .button_box:hover {
+	background-color: #b10f0f;
+	color: white;
+  }
+  

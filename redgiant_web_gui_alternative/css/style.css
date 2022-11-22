@@ -1,0 +1,151 @@
+body {
+    background-image: url("kapak.jpg");
+    background-color: #081d31;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding: 25px 50px;
+   }
+
+
+
+
+
+
+
+
+
+
+
+   
+
+
+
+   .column {
+    /* position:fixed; */
+    display: table;
+    
+  
+  /* background-color: #0C2A37; */
+  z-index: 500;
+  }
+  
+  /* Style the images inside the grid */
+  .column img {
+    opacity: 0.9;
+    width: 150px;
+    border-radius: 15px;
+  
+    transition: transform .1s;
+    background: linear-gradient(180deg, #124E79 0%,  100%);
+  
+  }
+  
+  .column img:hover { 
+    opacity: 1;
+    transform: scale(1.1);
+    border-radius: 20px;
+  
+  
+  }
+.row{
+  margin-top: 250px;
+  transition: transform .1s;
+
+}
+
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+    right: 10%;
+  }
+
+
+  
+  /* The expanding image container (positioning is needed to position the close button and the text) */
+  .container {
+  z-index: 500;
+  
+  
+    position: absolute;
+    margin-top: 0%;
+  margin-left: 180px;
+  margin-right: 5px;
+  width: 31%;
+  }
+  
+
+  
+
+  
+  .statusid{
+    position: absolute;
+    right: 0px;
+    width: 145px;
+    bottom: 0px;
+    padding: 10px;
+  }
+  .gamepad{
+    position: absolute;
+    right: 0px;
+    width: 80px;
+    bottom: 0px;
+    padding: 10px;
+  }
+
+
+
+
+
+
+  .alert {
+    padding: 20px;
+    background-color: #f44336;
+    color: white;
+    
+  }
+  
+  .closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .closebtn:hover {
+    color: black;
+  }
+  .alertcon {
+    padding: 20px;
+    background-color: #f44336;
+    color: white;
+    
+  }
+  
+  .closebtncon {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .closebtncon:hover {
+    color: black;
+  }
+
+
+
+
+
+
+
+
+
